@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "22418774"))
 API_HASH = os.environ.get("API_HASH", "d8c8dab274f9a811814a6a96d044028e")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001860238057"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002018301849"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5493260414"))
@@ -28,20 +28,20 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "5493260414"))
 PORT = os.environ.get("PORT", "8040")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mehtadmphta33:Mehtab1234@cluster0.ug4ivc8.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mehtadmphta33:<password>@cluster0.80db0ve.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001956446191"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001681611540"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001800113147"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001923816775"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Animes_xyz ⚡</b>.")
+START_MSG = os.environ.get("START_MESSAGE", "<b>𝗛𝗲𝘆 {first}🖐️ 🥲\n\n𝗜 𝗮𝗺 𝗮𝗻 𝗮 𝗳𝗶𝗹𝗲 𝘀𝘁𝗼𝗿𝗲 𝗯𝗼𝘁 𝗯𝗮𝘀𝗶𝗰𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 @Anime_Chidori</b>.")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "5086525318").split()):
+    for x in (os.environ.get("ADMINS", "6376328008").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -62,7 +62,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "🚫 Please Avoid Direct Messages. I'm Here merely for file sharing!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6208886200)
+ADMINS.append(6376328008)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
