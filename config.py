@@ -10,30 +10,30 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6427722178:AAEb28yNZhAddDmmTXBcrIX9J5fHXjll0j0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "0")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "3723455"))
+APP_ID = int(os.environ.get("APP_ID", "0"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "d4de7c99acf500db733ccc425398ca14")
+API_HASH = os.environ.get("API_HASH", "0")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002092058214"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "0"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5205293211"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "0"))
 
 #Port
 PORT = os.environ.get("PORT", "8040")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://sahil2:Anonymousme@cluster0.ozuqmqo.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "sahil2")
+DB_URI = os.environ.get("DATABASE_URL", "0")
+DB_NAME = os.environ.get("DATABASE_NAME", "0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001513649963"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001920779837"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -59,7 +59,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "🚫 Please Avoid Direct Messages. I'm Here merely for file sharing!"
+USER_REPLY_TEXT = "🚫 Please Dont Direct Messages. I'm Here merely for file sharing!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6376328008)
