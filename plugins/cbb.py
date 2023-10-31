@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>╔════════════⦿\n├⋗ Oᴡɴᴇʀ : <a href='tg://user?id={6376328008}'>𝑯𝒖𝒎𝒎𝒊𝒏𝒈 </a>\n├⋗ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={5493260414}'>⚚ 𝐓𝐑𝐈𝐏𝐏𝐘 ❄️ </a>\n├⋗ ʟᴀɴɢᴜᴀɢᴇ : <code>Python3</code>\n├⋗ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n├⋗ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/Trippy_Xt>File Store Bot</a>\n├⋗ Main Channel : <a href=https://t.me/Animechidori>Animechidori</a>\n├⋗ Support Group : https://t.me/ANIMEREQUEST2023\n╚═════════════════⦿</b>",
+            text = f"<b>╔════════════⦿\n├⋗ Oᴡɴᴇʀ : <a href='tg://user?id={5205293211}'>ησzєℓ ѕιℓνα #𝕲𝖔𝖉𝕺𝖋𝕮𝖗𝖆𝖈𝖐𝖊𝖗𝖘 </a>\n├⋗ ᴄʀᴇᴀᴛᴏʀ : <a href='tg://user?id={5205293211}'>ησzєℓ ѕιℓνα #𝕲𝖔𝖉𝕺𝖋𝕮𝖗𝖆𝖈𝖐𝖊𝖗 </a>\n├⋗ ʟᴀɴɢᴜᴀɢᴇ : <code>Python3</code>\n├⋗ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n├⋗ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href=https://t.me/sahil_19984>File Store Bot</a>\n├⋗ Main Channel : <a href=https://t.me/Anime_X_Hunters>Anime Hunters</a>\n├⋗ Support Group : https://t.me/Hunters_Discussion\n╚═════════════════⦿</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
