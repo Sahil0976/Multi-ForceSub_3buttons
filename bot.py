@@ -43,7 +43,7 @@ class Bot(Client):
 
         if FORCESUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
+                link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
                 if not link:
                     await self.export_chat_invite_link(FORCESUB_CHANNEL)
                     link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
