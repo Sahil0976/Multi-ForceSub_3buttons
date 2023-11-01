@@ -1,4 +1,5 @@
 #(©)Codexbotz
+#Recoded By @Its_Tartaglia_Childe
 
 import base64
 import re
@@ -32,7 +33,23 @@ async def is_subscribed(filter, client, update):
     if user_id in ADMINS:
         return True
     try:
-        member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL2, user_id = user_id)
+        member = await client.get_chat_member(chat_id = FORCESUB_CHANNEL2, user_id = user_id)
+    except UserNotParticipant:
+        return False
+
+    if not member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]:
+        return False
+    else:
+        return True
+
+async def is_subscribed(filter, client, update):
+    if not FORCESUB_CHANNEL3:
+        return True
+    user_id = update.from_user.id
+    if user_id in ADMINS:
+        return True
+    try:
+        member = await client.get_chat_member(chat_id = FORCESUB_CHANNEL3, user_id = user_id)
     except UserNotParticipant:
         return False
 
@@ -45,6 +62,8 @@ async def is_subscribed(filter, client, update):
     if not FORCESUB_CHANNEL:
         return True
     if not FORCESUB_CHANNEL2:
+        return True
+    if not FORCESUB_CHANNEL3:
         return True
     user_id = update.from_user.id
     if user_id in ADMINS:
@@ -60,6 +79,10 @@ async def is_subscribed(filter, client, update):
         member = await client.get_chat_member(chat_id = FORCESUB_CHANNEL2, user_id = user_id)
     except UserNotParticipant:
         return False
+    try:
+        member = await client.get_chat_member(chat_id = FORCESUB_CHANNEL3, user_id = user_id)
+    except UserNotParticipant:
+        return False    
     else:
         return True
         
