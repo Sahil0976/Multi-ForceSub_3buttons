@@ -92,7 +92,7 @@ async def start_command(client: Client, message: Message):
     ],
     [
                     InlineKeyboardButton(" ⚠️ ᴀʙᴏᴜᴛ ᴍᴇ ᴅᴜᴅᴇ ⚠️ ", callback_data = "about"),
-                    InlineKeyboardButton(" ✌️ ​🇴​​🇫​​🇫​ ✌️ ", callback_data = "close")
+                    InlineKeyboardButton(" ✌️ ​ᴏꜰꜰ ✌️ ", callback_data = "close")
         
     ]
             ]
@@ -127,7 +127,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
     [
         InlineKeyboardButton(text="💞 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💞", url=client.invitelink),
-        InlineKeyboardButton(text="💞 ​🇸​​🇪​​🇨​​🇴​​🇳​​🇩​ ​🇨​​🇭​​🇦​​🇳​​🇳​​🇪​​🇱​ 💞", url=client.invitelink2),
+        InlineKeyboardButton(text="💞 ​ꜱᴇᴄᴏɴᴅ ᴄʜᴀɴɴᴇʟ 💞", url=client.invitelink2),
         InlineKeyboardButton(text="💞 ɢʀᴏᴜᴘ ᴄʜᴀᴛ 💞", url=client.invitelink3),
     ]
 ]
@@ -193,7 +193,7 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>​🇧​​🇷​​🇴​​🇦​​🇩​​🇨​​🇦​​🇸​​🇹​ ​🇩​​🇴​​🇳​​🇪​...</u>
+        status = f"""<b><u>​ʙʀᴏᴀᴅᴄᴀꜱᴛ​...</u>
 
 Total Users: <code>{total}</code>
 Successful: <code>{successful}</code>
