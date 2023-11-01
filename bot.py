@@ -67,7 +67,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Please Double check the FORCESUB_CHANNEL2 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCESUB_CHANNEL2}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Hunters_Discussion for support")
                 sys.exit()
-         if FORCESUB_CHANNEL3:
+        if FORCESUB_CHANNEL3:
             try:
                 link = (await self.get_chat(FORCESUB_CHANNEL3)).invite_link
                 if not link:
