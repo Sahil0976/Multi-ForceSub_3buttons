@@ -38,7 +38,7 @@
 ##
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/Sahil0976/Multi-ForceSub
+git clone https://github.com/Sahil0976/MultiForce-Sub
 cd File-Sharing-Bot
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
@@ -74,6 +74,8 @@ python3 main.py
 * `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
 * `FORCESUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCESUB_CHANNEL2` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCESUB_CHANNEL3` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
 
 ### Extra Variables
