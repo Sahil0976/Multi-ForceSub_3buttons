@@ -30,12 +30,6 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)</br>
 
 ##
-### Installation
-#### Deploy on Render
-**FORK THIS REPO, EDIT YOUR CONFIG, CONNECT YOUR ACCOUNT TO RENDER ADD VARIABLES AND ENJOY**<br>
-[![Deploy](https://render.com/images/deploy-to-render-button.svg)](https://render.com)</br>
-
-##
 #### Deploy in your VPS
 ````bash
 git clone https://github.com/Sahil0976/MultiForce-Sub
