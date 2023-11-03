@@ -101,7 +101,7 @@ python3 main.py
 ### Licence
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
-[FILE-SHARING-BOT](https://github.com/Sahil0976/Nozel-s_Sharing_bot) is Free Software: You can use, study share and improve it at your
+[FILE-SHARING-BOT](https://github.com/Sahil0976/MultiForce-Sub) is Free Software: You can use, study share and improve it at your
 will. Specifically you can redistribute and/or modify it under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
 published by the Free Software Foundation, either version 3 of the License, or
