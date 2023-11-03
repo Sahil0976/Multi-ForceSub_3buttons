@@ -49,7 +49,7 @@
       "description": "id of your group, if you want enable force sub feature else put 0",
       "value": "0" 
     },
-    "START_MESSAGE": {
+    "START_MSG": {
       "description": "Optional: start message of bot, use HTML parsemode format",
       "value": "𝐇𝐢 𝐃𝐮𝐝𝐞.. {first}\n\n𝐈 𝐚𝐦 𝐚 𝐟𝐢𝐥𝐞 𝐬𝐭𝐨𝐫𝐞 𝐛𝐨𝐭\n𝐘𝐨𝐮 𝐜𝐚𝐧 𝐚𝐜𝐜𝐞𝐬𝐬 𝐟𝐢𝐥𝐞𝐬 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐚 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐥𝐢𝐧𝐤..!"
     },
@@ -76,7 +76,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   }
 }
