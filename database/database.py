@@ -20,23 +20,7 @@ async def close_mongodb_connection(client):
     if client:
         client.close()
 
-async def present_user(user_id: int, user_data):
-    found = user_data.find_one({'_id': user_id})
-    return bool(found)
-
-async def add_user(user_id: int, user_data):
-    user_data.insert_one({'_id': user_id})
-
-async def full_userbase(user_data):
-    user_docs = user_data.find()
-    user_ids = [doc['_id'] for doc in user_docs]
-    return user_ids
-
-async def del_user(user_id: int, user_data):
-    user_data.delete_one({'_id': user_id})
-
-# Usage example
-if __name__ == '__main__':
+async def database_operations():
     client = await connect_to_mongodb()
     if client:
         try:
@@ -52,3 +36,8 @@ if __name__ == '__main__':
     else:
         # Handle the case where the MongoDB connection could not be established
         pass
+
+# Usage example
+if __name__ == '__main__':
+    import asyncio
+    asyncio.run(database_operations())
