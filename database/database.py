@@ -1,11 +1,12 @@
 #(©)CodeXBotz
 #recoded by its_tartaglia_Childe
 
+
 import pymongo
 from pymongo.errors import ServerSelectionTimeoutError
 from config import DB_URI, DB_NAME
 
-def connect_to_mongodb():
+async def connect_to_mongodb():
     try:
         dbclient = pymongo.MongoClient(DB_URI)
         database = dbclient[DB_NAME]
@@ -14,6 +15,10 @@ def connect_to_mongodb():
     except ServerSelectionTimeoutError as e:
         print(f"Error connecting to MongoDB: {e}")
         return None
+
+async def close_mongodb_connection(client):
+    if client:
+        client.close()
 
 async def present_user(user_id: int, user_data):
     found = user_data.find_one({'_id': user_id})
@@ -32,10 +37,18 @@ async def del_user(user_id: int, user_data):
 
 # Usage example
 if __name__ == '__main__':
-    user_data = connect_to_mongodb()
-    if user_data:
-        # Now you can use the user_data object for your database operations
-        pass
+    client = await connect_to_mongodb()
+    if client:
+        try:
+            # Now you can use the user_data object for your database operations
+            # For example:
+            user_id = 12345
+            await add_user(user_id, client)
+            await present_user(user_id, client)
+            await full_userbase(client)
+            await del_user(user_id, client)
+        finally:
+            await close_mongodb_connection(client)
     else:
         # Handle the case where the MongoDB connection could not be established
         pass
