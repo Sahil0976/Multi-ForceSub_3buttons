@@ -1,9 +1,9 @@
 # --- For-Bot-Working --------- #
-pyrogram==2.0.35
-TgCrypto==1.2.5
+pyrogram
+TgCrypto
 pyromod==1.5
 # --- For-Database ------------ #
-pymongo==4.0.2
-dnspython==2.3.0
+pymongo
+dnspython
 # --- For-Web-Response ------- #
-aiohttp==3.8.4
+aiohttp
